@@ -2,8 +2,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Saludo(moment, name){
+  let saludo = <h3>"Good {moment}, {name}"</h3>
+  return saludo;
+}
+
+
 function App() {
   let nombre = 'Luciana';
+  let momento = 'morning';
   let presentacion = <h2>"Hola, soy {nombre}"</h2>;
 
   return (
@@ -16,6 +23,7 @@ function App() {
         <p>Bienvenid@!</p>
         {alert('Hola Mundo')}
         {presentacion}
+        {Saludo(momento, nombre)}
         <a
           className="App-link"
           href="https://reactjs.org"

@@ -4,6 +4,7 @@ import './App.css';
 
 //importar componentes
 import PrimerComponente from './components/PrimerComponente';
+import SegundoComponente from './components/SegundoComponente';
 
 function Saludo(moment, name){
   let saludo = <h3>"Good {moment}, {name}"</h3>
@@ -51,6 +52,7 @@ function App() {
         </a>
         <section className='Componentes'>
           <PrimerComponente/>
+          <SegundoComponente/>
         </section>
       </header>
     </div>

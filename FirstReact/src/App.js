@@ -2,6 +2,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+//importar componentes
+import PrimerComponente from './components/PrimerComponente';
+
 function Saludo(moment, name){
   let saludo = <h3>"Good {moment}, {name}"</h3>
   return saludo;
@@ -46,6 +49,9 @@ function App() {
         >
           Learn React
         </a>
+        <section className='Componentes'>
+          <PrimerComponente/>
+        </section>
       </header>
     </div>
   );

@@ -18,7 +18,7 @@ class PrimerComponente extends React.Component {
                     receta.ingredientes.map((ingrediente, i ) => {
                         console.log(ingrediente);
                         return(
-                            <li>
+                            <li key={i}>
                                 {ingrediente}
                             </li>
                         );

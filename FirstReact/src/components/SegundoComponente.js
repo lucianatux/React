@@ -3,7 +3,11 @@ import React, {Component} from 'react';
 class SegundoComponente extends Component {
     render() {
         return (
-            <h1>Soy el Segundo Componente</h1>
+            <React.Fragment>
+                <h3>Soy el Segundo Componente</h3>
+                <h4>Estoy probando</h4>
+                <hr />
+            </React.Fragment>
         );
     }
 }

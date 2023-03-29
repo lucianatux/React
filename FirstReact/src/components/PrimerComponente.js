@@ -2,8 +2,32 @@ import React from 'react';
 
 class PrimerComponente extends React.Component {
     render() {
+        let receta = {
+            nombre: 'Pizza',
+            ingredientes: ['tomate', 'queso', 'jamón'],
+            calorias: 400
+        };
         return (
-            <h1>Soy el Primer Componente</h1>
+            <div className='primer-componente'>
+                <h1>Soy el Primer Componente</h1>
+                <h4>{receta.nombre}</h4>
+                <p>{'Calorías: ' + receta.calorias}</p>
+                <p>Ingredientes:</p>
+                <ol>
+                {
+                    receta.ingredientes.map((ingrediente, i ) => {
+                        console.log(ingrediente);
+                        return(
+                            <li>
+                                {ingrediente}
+                            </li>
+                        );
+                    })
+                    }
+                </ol>
+                <hr/>
+            </div>
+            
         );
     }
 }

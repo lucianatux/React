@@ -5,9 +5,16 @@ class SegundoComponente extends Component {
         super(props);
         this.state = {
             image: 'https://live.staticflickr.com/65535/52477609893_441ea3a0d5_w.jpg'
-        };
+        }
     }
-    render() {
+
+        componentDidMount(){
+            setTimeout(()=>{
+                this.setState({image: 'https://live.staticflickr.com/65535/52477527455_50ecea5949_z.jpg'})
+            }, 5000)
+        }
+    
+    render(){
         const {title, description} = this.props;
         return (
             <React.Fragment>

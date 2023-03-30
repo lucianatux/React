@@ -15,10 +15,13 @@ class PrimerComponente extends React.Component {
                 <h1 className='titulo'>Soy el Primer Componente</h1>
                 <h4 className='bg-info'>{receta.nombre}</h4>
                 <p>{'Calorías: ' + receta.calorias}</p>
-                <p style={{
-                    backgroundImage: `url(${monkey3.jpg}), linear-gradient(to right, #a74cf2, #617bfb)`
-                    }}>Ingredientes:</p>
-                <ol>
+                <p>Ingredientes:</p>
+
+                <ol
+                style={{
+                    backgroundImage: `url(${monkey3}), linear-gradient(to right, #a74fff, #617f11)`
+                    }}
+                >
                 {
                     receta.ingredientes.map((ingrediente, i ) => {
                         console.log(ingrediente);

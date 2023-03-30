@@ -1,5 +1,6 @@
 import React from 'react';
-import './PrimerComponente.css'
+import './PrimerComponente.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class PrimerComponente extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class PrimerComponente extends React.Component {
         return (
             <div className='primer-componente'>
                 <h1 className='titulo'>Soy el Primer Componente</h1>
-                <h4>{receta.nombre}</h4>
+                <h4 className='bg-info'>{receta.nombre}</h4>
                 <p>{'Calorías: ' + receta.calorias}</p>
                 <p>Ingredientes:</p>
                 <ol>

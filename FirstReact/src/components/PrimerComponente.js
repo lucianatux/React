@@ -14,6 +14,7 @@ class PrimerComponente extends React.Component {
             <div className='primer-componente'>
                 <h1>{this.props.title}</h1>
                 <h3 className='titulo'>Soy el Primer Componente</h3>
+                <p>{this.props.description}</p>
                 <h4 className='bg-info'>{receta.nombre}</h4>
                 <p>{'Calorías: ' + receta.calorias}</p>
                 <p>Ingredientes:</p>

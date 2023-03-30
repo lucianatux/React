@@ -53,9 +53,12 @@ function App() {
         <section className='Componentes'>
           <PrimerComponente
           title="el título con props"
-          description="la descripción"
+          description="la descripción con props"
           />
-          <SegundoComponente/>
+          <SegundoComponente
+          title="title con props"
+          description="description con props"
+          />
         </section>
       </header>
     </div>

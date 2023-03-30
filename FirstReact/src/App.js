@@ -51,7 +51,10 @@ function App() {
           Learn React
         </a>
         <section className='Componentes'>
-          <PrimerComponente/>
+          <PrimerComponente
+          title="el título con props"
+          description="la descripción"
+          />
           <SegundoComponente/>
         </section>
       </header>

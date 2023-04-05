@@ -7,6 +7,7 @@ function Welcome(props) {
             <div className='fitness-user-info'>
                 <h1>"Hola {props.username}"</h1>
                 <p>"Vamos a trabajar!"</p>
+                <hr></hr>
             </div>
         </div>
     )

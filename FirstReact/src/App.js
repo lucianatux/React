@@ -5,6 +5,7 @@ import './App.css';
 //importar componentes
 import PrimerComponente from './components/PrimerComponente';
 import SegundoComponente from './components/SegundoComponente';
+import Welcome from './components/Welcome';
 
 function Saludo(moment, name){
   let saludo = <h3>"Good {moment}, {name}"</h3>
@@ -59,6 +60,7 @@ function App() {
           title="title con props"
           description="description con props"
           />
+          <Welcome username="Lu"/>
         </section>
       </header>
     </div>

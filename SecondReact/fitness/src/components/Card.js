@@ -1,11 +1,12 @@
 import React from 'react';
+import penguin from '../images/pinguino.jpg'
 
 class Card extends React.Component {
     render() {
         return (
             <div>
                 <div>
-                    <img src='' alt=''/>
+                    <img src={penguin} alt=''/>
                 </div>
                 <div>
                     <h1>Tbb Gkjh</h1>

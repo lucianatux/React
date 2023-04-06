@@ -3,5 +3,29 @@
 }
 
 .card{
-    background-color: rgb(206, 206, 242);
+    border: none;
+    border-radius: 8px;
+}
+
+#peng{
+    max-width: 200px;
+    height: auto;
+}
+
+.fitness-user-info{
+    margin: 100px 200px;
+}
+
+.fitness-card{
+    max-height: 140px;
+    max-width: 540px;
+}
+
+.fitness-card-info{
+    padding-left: 0;
+    padding-right: 75px;
+}
+
+.fitness-card-info h1{
+    color:beige;
 }

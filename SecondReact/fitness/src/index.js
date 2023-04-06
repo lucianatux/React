@@ -1,7 +1,13 @@
-const element = document.createElement('h1');
+//const element = document.createElement('h1');
+//element.innerText = 'Hello';
+//const container = document.getElementById('root');
+//container.appendChild(element);
 
-element.innerText = 'Hello';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const element = <h1>Hello World</h1>;
 const container = document.getElementById('root');
 
-container.appendChild(element);
+//ReactDOM.render(que, donde)
+ReactDOM.render(element, container);

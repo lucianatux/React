@@ -5,8 +5,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './components/Card'
 
-function getName(user){
+/*function getName(user){
   return `${user.firstname} ${user.lastname}`;
 }
 
@@ -29,7 +30,8 @@ const element = (<div>
                   {getGreeting(user)} 
                   <img src={user.avatar} alt='avatar'/>
                 </div>)
+                */
 const container = document.getElementById('root');
 
 //ReactDOM.render(que, donde)
-ReactDOM.render(element, container);
+ReactDOM.render(<Card/>, container);

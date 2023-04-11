@@ -8,6 +8,19 @@ import ReactDOM from "react-dom";
 import Card from "./components/Card";
 import "bootstrap/dist/css/bootstrap.css";
 
+const container = document.getElementById("root");
+
+//ReactDOM.render(que, donde)
+ReactDOM.render(<Card 
+                  title="trertg"
+                  description="sfrsret"
+                  img="https://live.staticflickr.com/65535/52477527455_50ecea5949_z.jpg"
+                  leftColor="#a3a3a3"
+                  rightColor="#fafafa"
+                />, container);
+
+
+                
 /*function getName(user){
   return `${user.firstname} ${user.lastname}`;
 }
@@ -32,13 +45,3 @@ const element = (<div>
                   <img src={user.avatar} alt='avatar'/>
                 </div>)
                 */
-const container = document.getElementById("root");
-
-//ReactDOM.render(que, donde)
-ReactDOM.render(<Card 
-                  title="trertg"
-                  description="sfrsret"
-                  img="https://live.staticflickr.com/65535/52477527455_50ecea5949_z.jpg"
-                  leftColor="#a3a3a3"
-                  rightColor="#fafafa"
-                />, container);

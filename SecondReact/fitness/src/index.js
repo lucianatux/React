@@ -6,21 +6,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./components/Card";
+import Welcome from "./components/Welcome";
 import "bootstrap/dist/css/bootstrap.css";
 
 const container = document.getElementById("root");
 
 //ReactDOM.render(que, donde)
-ReactDOM.render(<Card 
-                  title="trertg"
-                  description="sfrsret"
-                  img="https://live.staticflickr.com/65535/52477527455_50ecea5949_z.jpg"
-                  leftColor="#a3a3a3"
-                  rightColor="#fafafa"
-                />, container);
+ReactDOM.render(<div>
+                  <Welcome 
+                  username="Luciana"
+                  />  
+                  <Card 
+                title="trertg"
+                description="sfrsret"
+                img="https://live.staticflickr.com/65535/52477527455_50ecea5949_z.jpg"
+                leftColor="#a3a3a3"
+                rightColor="#fafafa"
+              />  
+                </div>, container);
 
 
-                
+                         
 /*function getName(user){
   return `${user.firstname} ${user.lastname}`;
 }

@@ -5,14 +5,18 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Card from "./components/Card";
-import Welcome from "./components/Welcome";
+import Exercises from "./pages/Exercises";
 import "bootstrap/dist/css/bootstrap.css";
 
 const container = document.getElementById("root");
 
 //ReactDOM.render(que, donde)
-ReactDOM.render(<div>
+ReactDOM.render(<Exercises/>, container);
+
+
+                         
+/*
+<div>
                   <Welcome 
                   username="Luciana"
                   />  
@@ -23,11 +27,12 @@ ReactDOM.render(<div>
                 leftColor="#a3a3a3"
                 rightColor="#fafafa"
               />  
-                </div>, container);
+                </div>
 
 
-                         
-/*function getName(user){
+
+
+function getName(user){
   return `${user.firstname} ${user.lastname}`;
 }
 
